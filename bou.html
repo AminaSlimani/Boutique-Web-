@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> AS Chic</title>
+        <link rel="shortcut icon" href="./logo .jpeg">
+        <link rel="stylesheet" href="bou.css">
+        <script src="bou.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+              <div class="logo">AS Fashion</div> 
+              <ul class="menu">
+                <li><a href="#Rb">Robes</a></li>
+                <li><a href="#Jp">Jupes</a></li>
+                <li><a href="#P">Pantalons</a></li>
+                <li><a href="#Che" >Chemises</a></li>
+                <li><a href="#ens">Ensembles</a></li>
+                <li><a href="cart.html">🛒Panier</a></li>
+              </ul>
+                    
+            </nav>
+        </header>
+        <section id="hero">
+            <video autoplay muted loop id="hero-video">
+                <source src="./VPR.mp4" type="video/mp4">.
+            </video>
+            <div class="hero-overlay">
+                <h1>Bienvenue chez AS Fashion</h1>
+                <p>Découvrez notre collection élégante de robes, jupes, pantalons et plus encore.</p>
+            </div>
+        </section>
+
+<section id="Rb">
+  <h2>Robes</h2>
+  <div class="produits">
+      <div class="dress">
+          <img id="dress1" src="./rb2.jpeg" height="300" alt="robe">
+          <h3>Robe simple </h3>
+          <p>200 DH</p>
+           <label for="size1">Taille:</label>
+          <select id="size1">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe simple', 200, document.getElementById('size1').value, document.getElementById('dress1').src)">Ajouter au panier</button>
+          <div class="colors">
+            <button class="red" onclick="changeImg('./rb2.jpeg', 'dress1')"></button>
+            <button class="pink" onclick="changeImg('./rb rose.jpeg', 'dress1')"></button>
+            <button class="purple" onclick="changeImg('./rb mauve .jpeg', 'dress1')"></button>
+            <button class="brown" onclick="changeImg('./rb mar.jpeg', 'dress1')"></button>
+         </div>
+      </div>
+      <div class="dress">
+          <img id="dress2" src="./re rouge.jpeg" height="300" alt="robe">
+          <h3>Robe Elegante</h3>
+          <p>250 DH</p>
+          <label for="size2">Taille:</label>
+          <select id="size2">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Elegante', 250, document.getElementById('size2').value, document.getElementById('dress2').src)">Ajouter au panier</button>
+          <div class="colors">
+            <button class="red" onclick="changeImg('./re rouge.jpeg', 'dress2')"></button>
+            <button class="pink" onclick="changeImg('./repink .jpeg', 'dress2')"></button>
+            <button class="black" onclick="changeImg('./reblack.jpeg', 'dress2')"></button>
+            <button class="bleu" onclick="changeImg('./rebleu.jpeg', 'dress2')"></button>
+            <button class="green" onclick="changeImg('./revert.jpeg', 'dress2')"></button>
+            <button class="white" onclick="changeImg('./rewhite.jpeg', 'dress2')"></button>
+            <button class="bbbleu" onclick="changeImg('./rebbbleu.jpeg', 'dress2')"></button>
+            <button class="purple" onclick="changeImg('./repur.jpeg', 'dress2')"></button>
+            <button class="brown" onclick="changeImg('./rebrown.jpeg', 'dress2')"></button>
+          </div>
+      </div>
+      <div class="dress">
+          <img id="dress3" src="./rcrose.jpeg" height="300" alt="robe">
+          <h3>Robe Chic </h3>
+          <p>250 DH</p>
+          <label for="size3">Taille:</label>
+          <select id="size3">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Chic', 250, document.getElementById('size3').value, document.getElementById('dress3').src)">Ajouter au panier</button>
+          <div class="colors">
+            <button class="pink" onclick="changeImg('./rcrose.jpeg', 'dress3')"></button>
+            <button class="red" onclick="changeImg('./rcred.jpeg', 'dress3')"></button>
+            <button class="black" onclick="changeImg('./rcnoir.jpeg', 'dress3')"></button>
+            <button class="white" onclick="changeImg('./rcblanc.jpeg', 'dress3')"></button>
+         </div>
+      </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="produits">
+      <div class="dress">
+          <img id="dress4" src="./AA.jpeg" height="300" alt="robe">
+          <h3>Robe Elegante </h3>
+          <p>250 DH</p>
+          <label for="size4">Taille:</label>
+          <select id="size4">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Elegante', 250, document.getElementById('size4').value, document.getElementById('dress4').src)">Ajouter au panier</button>
+          <div class="colors">
+            <button class="white" onclick="changeImg('./AA.jpeg', 'dress4')"></button>
+            <button class="red" onclick="changeImg('./AC.jpeg', 'dress4')"></button>
+            <button class="pink" onclick="changeImg('./AD.jpeg', 'dress4')"></button>
+            <button class="black" onclick="changeImg('./AE.jpeg', 'dress4')"></button>
+            <button class="bleu" onclick="changeImg('./AB.jpeg', 'dress4')"></button>
+        </div>
+      </div>
+      <div class="dress">
+          <img id="dress5" src="./F.jpeg" height="300" alt="robe">
+          <h3>Robe Longue </h3>
+          <p>250 DH</p>
+          <label for="size5">Taille:</label>
+          <select id="size5">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Longue', 250, document.getElementById('size5').value, document.getElementById('dress5').src)">Ajouter au panier</button>
+      </div>
+      <div class="dress">
+          <img id="dress6" src="./H.jpeg" height="300" alt="robe">
+          <h3>Robe simple </h3>
+          <p>250 DH</p>
+          <label for="size6">Taille:</label>
+          <select id="size6">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe simple', 250, document.getElementById('size6').value, document.getElementById('dress6').src)">Ajouter au panier</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="produits">
+      <div class="dress">
+          <img id="dress7" src="./M.jpeg" height="300" alt="robe">
+          <h3>Robe Courte  </h3>
+          <p>300 DH</p>
+          <label for="size7">Taille:</label>
+          <select id="size7">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Courte', 300, document.getElementById('size7').value, document.getElementById('dress7').src)">Ajouter au panier</button>
+      </div>
+      <div class="dress">
+          <img id="dress8" src="./BA.jpeg" height="300" alt="robe">
+          <h3>Robe simple </h3>
+          <p>250 DH</p>
+          <label for="size8">Taille:</label>
+          <select id="size8">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe simple', 250, document.getElementById('size8').value, document.getElementById('dress8').src)">Ajouter au panier</button>
+          <div class="colors">
+            <button class="white" onclick="changeImg('./BC.jpeg', 'dress8')"></button>
+            <button class="black" onclick="changeImg('./BA.jpeg', 'dress8')"></button>
+            <button class="bleu" onclick="changeImg('./BB.jpeg', 'dress8')"></button> 
+          </div>
+      </div>
+      <div class="dress">
+          <img id="dress9" src="./G.jpeg" height="300" alt="robe">
+          <h3>Robe demi manche  </h3>
+          <p>300 DH</p>
+          <label for="size9">Taille:</label>
+          <select id="size9">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe demi manche ', 300, document.getElementById('size9').value, document.getElementById('dress9').src)">Ajouter au panier</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="produits">
+      <div class="dress">
+          <img id="dress10" src="./S2.jpeg" height="300" alt="robe">
+          <h3>Robe Soirée </h3>
+          <p>1100 DH</p>
+          <label for="size10">Taille:</label>
+          <select id="size10">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Soirée ', 1100, document.getElementById('size10').value, document.getElementById('dress10').src)">Ajouter au panier</button>
+      </div>
+      <div class="dress">
+          <img id="dress11" src="./S1.jpeg" height="300" alt="robe">
+          <h3>Robe Soirée Chic </h3>
+          <p>1000 DH</p>
+          <label for="size11">Taille:</label>
+          <select id="size11">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Soirée Chic ', 1000, document.getElementById('size11').value, document.getElementById('dress11').src)">Ajouter au panier</button>
+      </div>
+      <div class="dress">
+          <img id="dress12" src="./S3.jpeg" height="300" alt="robe">
+          <h3>Robe Soirée Simple </h3>
+          <p>900 DH</p>
+          <label for="size12">Taille:</label>
+          <select id="size12">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Soirée Simple ', 900, document.getElementById('size12').value, document.getElementById('dress12').src)">Ajouter au panier</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="produits">
+      <div class="dress">
+          <img id="dress13" src="./S7.jpeg" height="300" alt="robe">
+          <h3>Robe Elegante </h3>
+          <p>1000 DH</p>
+          <label for="size13">Taille:</label>
+          <select id="size13">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Elegante', 1000, document.getElementById('size13').value, document.getElementById('dress13').src)">Ajouter au panier</button>
+      </div>
+      <div class="dress">
+          <img id="dress14" src="./S8.jpeg" height="300" alt="robe">
+          <h3>Robe Chic Longue </h3>
+          <p>1500 DH</p>
+          <label for="size14">Taille:</label>
+          <select id="size14">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Chic Longue', 1500, document.getElementById('size14').value, document.getElementById('dress14').src)">Ajouter au panier</button>
+      </div>
+      <div class="dress">
+          <img id="dress15" src="./S9.jpeg" height="300" alt="robe">
+          <h3>Robe Soirée </h3>
+          <p>700 DH</p>
+          <label for="size15">Taille:</label>
+          <select id="size15">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Soirée  ', 700, document.getElementById('size15').value, document.getElementById('dress15').src)">Ajouter au panier</button>
+      </div>
+    </div>
+    <br>
+    <br>
+     <div class="produits">
+      <div class="dress">
+          <img id="dress16" src="./SS1.jpeg" height="300" alt="robe">
+          <h3>Robe Cute </h3>
+          <p>750 DH</p>
+          <label for="size16">Taille:</label>
+          <select id="size16">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Cute ', 750, document.getElementById('size16').value, document.getElementById('dress16').src)">Ajouter au panier</button>
+      </div>
+      <div class="dress">
+          <img id="dress17" src="./S5.jpeg" height="300" alt="robe">
+          <h3>Robe Princesse </h3>
+          <p>1300 DH</p>
+          <label for="size17">Taille:</label>
+          <select id="size17">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Princesse ', 1300, document.getElementById('size17').value, document.getElementById('dress17').src)">Ajouter au panier</button>
+      </div>
+      <div class="dress">
+          <img id="dress18" src="./S6.jpeg" height="300" alt="robe">
+          <h3>Robe Soirée Courte </h3>
+          <p>1000 DH</p>
+          <label for="size18">Taille:</label>
+          <select id="size18">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Soirée Courte ', 1000, document.getElementById('size18').value, document.getElementById('dress18').src)">Ajouter au panier</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="produits">
+      <div class="dress">
+          <img id="dress19" src="./M1.jpeg" height="300" alt="robe">
+          <h3>Robe De Mariage Simple  </h3>
+          <p>1700 DH</p>
+          <label for="size19">Taille:</label>
+          <select id="size19">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe De Mariage ', 1700, document.getElementById('size19').value, document.getElementById('dress19').src)">Ajouter au panier</button>
+      </div>
+      <div class="dress">
+          <img id="dress20" src="./M2.jpeg" height="300" alt="robe">
+          <h3>Robe Courte  </h3>
+          <p>900 DH</p>
+          <label for="size21">Taille:</label>
+          <select id="size21">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe Courte ', 900, document.getElementById('size21').value, document.getElementById('dress20').src)">Ajouter au panier</button>
+      </div>
+      <div class="dress">
+          <img id="dress22" src="./M3.jpeg" height="300" alt="robe">
+          <h3>Robe De Mariage Longue  </h3>
+          <p>1000 DH</p>
+          <label for="size22">Taille:</label>
+          <select id="size22">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Robe De Mariage Longue ', 1000, document.getElementById('size22').value, document.getElementById('dress22').src)">Ajouter au panier</button>
+      </div>
+    </div>
+  </section>
+<section id="Jp">
+  <h2>Jupes</h2>
+  <div class="produits">
+    <div class="jupe">
+      <img id="JP1" src="./J1.jpeg" height="300" alt="robe">
+          <p>150 DH</p>
+          <label for="size23">Taille:</label>
+          <select id="size23">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 150, document.getElementById('size23').value, document.getElementById('JP1').src)">Ajouter au panier</button>
+      </div>
+      <div class="jupe">
+      <img id="JP2" src="./J2.jpeg" height="300" alt="robe">
+          <p>170 DH</p>
+          <label for="size24">Taille:</label>
+          <select id="size24">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 170, document.getElementById('size24').value, document.getElementById('JP2').src)">Ajouter au panier</button>
+      </div>
+      <div class="jupe">
+      <img id="JP3" src="./J3.jpeg" height="300" alt="robe">
+          <p>150 DH</p>
+          <label for="size25">Taille:</label>
+          <select id="size25">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 150, document.getElementById('size25').value, document.getElementById('JP3').src)">Ajouter au panier</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="produits">
+    <div class="jupe">
+      <img id="JP4" src="./J16.jpeg" height="300" alt="robe">
+          <p>200 DH</p>
+          <label for="size26">Taille:</label>
+          <select id="size26">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 200, document.getElementById('size26').value, document.getElementById('JP4').src)">Ajouter au panier</button>
+      </div>
+      <div class="jupe">
+      <img id="JP5" src="./J10.jpeg" height="300" alt="robe">
+          <p>230 DH</p>
+          <label for="size27">Taille:</label>
+          <select id="size27">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 230, document.getElementById('size27').value, document.getElementById('JP5').src)">Ajouter au panier</button>
+      </div>
+      <div class="jupe">
+      <img id="JP6" src="./J8.jpeg" height="300" alt="robe">
+          <p>200 DH</p>
+          <label for="size28">Taille:</label>
+          <select id="size28">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 200, document.getElementById('size28').value, document.getElementById('JP6').src)">Ajouter au panier</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="produits">
+    <div class="jupe">
+      <img id="JP7" src="./J11.jpeg" height="300" alt="robe">
+          <p>270 DH</p>
+          <label for="size29">Taille:</label>
+          <select id="size29">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 270, document.getElementById('size29').value, document.getElementById('JP7').src)">Ajouter au panier</button>
+      </div>
+      <div class="jupe">
+      <img id="JP8" src="./J14.jpeg" height="300" alt="robe">
+          <p>150 DH</p>
+          <label for="size30">Taille:</label>
+          <select id="size30">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 150, document.getElementById('size30').value, document.getElementById('JP8').src)">Ajouter au panier</button>
+      </div>
+      <div class="jupe">
+      <img id="JP9" src="./J13.jpeg" height="300" alt="robe">
+          <p>150 DH</p>
+          <label for="size31">Taille:</label>
+          <select id="size31">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 150, document.getElementById('size31').value, document.getElementById('JP9').src)">Ajouter au panier</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="produits">
+    <div class="jupe">
+      <img id="JP10" src="./J12.jpeg" height="300" alt="robe">
+          <p>150 DH</p>
+          <label for="size32">Taille:</label>
+          <select id="size32">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 150, document.getElementById('size32').value, document.getElementById('JP10').src)">Ajouter au panier</button>
+      </div>
+      <div class="jupe">
+      <img id="JP11" src="./J5.jpeg" height="300" alt="robe">
+          <p>250 DH</p>
+          <label for="size33">Taille:</label>
+          <select id="size33">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 170, document.getElementById('size33').value, document.getElementById('JP11').src)">Ajouter au panier</button>
+      </div>
+      <div class="jupe">
+      <img id="JP12" src="./J6.jpeg" height="300" alt="robe">
+          <p>150 DH</p>
+          <label for="size34">Taille:</label>
+          <select id="size34">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 150, document.getElementById('size34').value, document.getElementById('JP12').src)">Ajouter au panier</button>
+      </div>
+    </div>
+</section>
+<section id="P">
+  <h2>Pantalons</h2>
+  <H1>Pantalons Jeans</H1>
+  <div class="produits">
+    <div class="Pa">
+      <img id="P1" src="./P1.jpeg" height="300" alt="robe">
+      <h3>Pantalon avec détail  </h3>
+          <p>200 DH</p>
+          <label for="size35">Taille:</label>
+          <select id="size35">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Pantalon avec détail  ', 200, document.getElementById('size35').value, document.getElementById('P1').src)">Ajouter au panier</button>
+      </div>
+      <div class="Pa">
+      <img id="P2" src="./P4.jpeg" height="300" alt="robe">
+      <h3>Jeans simple </h3>
+          <p>150 DH</p>
+          <label for="size36">Taille:</label>
+          <select id="size36">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jeans simple', 150, document.getElementById('size36').value, document.getElementById('P2').src)">Ajouter au panier</button>
+      </div>
+      <div class="Pa">
+      <img id="P3" src="./P8.jpeg" height="300" alt="robe">
+      <h3>Jean pattes d’éléphant</h3>
+          <p>100 DH</p>
+          <label for="size37">Taille:</label>
+          <select id="size37">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jean pattes d’éléphant', 100, document.getElementById('size37').value, document.getElementById('P3').src)">Ajouter au panier</button>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="produits">
+    <div class="Pa">
+      <img id="P4" src="./P6.jpeg" height="300" alt="robe">
+      <h3>Jean over size</h3>
+          <p>250 DH</p>
+          <label for="size38">Taille:</label>
+          <select id="size38">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jupe', 250, document.getElementById('size38').value, document.getElementById('P4').src)">Ajouter au panier</button>
+      </div>
+      <div class="Pa">
+      <img id="P5" src="./P9.jpeg" height="300" alt="robe">
+      <h3>Jean Large  </h3>
+          <p>250 DH</p>
+          <label for="size39">Taille:</label>
+          <select id="size39">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jean Large', 250, document.getElementById('size39').value, document.getElementById('P5').src)">Ajouter au panier</button>
+      </div>
+      <div class="Pa">
+      <img id="P6" src="./P7.jpeg" height="300" alt="robe">
+      <h3>Jean Chale </h3>
+          <p>200 DH</p>
+          <label for="size40">Taille:</label>
+          <select id="size40">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Jean Chale', 200, document.getElementById('size40').value, document.getElementById('P6').src)">Ajouter au panier</button>
+      </div>
+    </div>
+  </div>
+  <br>
+    <br>
+     <H1>Pantalon Classe </H1>
+    <div class="produits">
+    <div class="Pa">
+      <img id="P7" src="./P10.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size41">Taille:</label>
+          <select id="size41">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Pantalon Classe ', 300, document.getElementById('size41').value, document.getElementById('P7').src)">Ajouter au panier</button>
+      </div>
+      <div class="Pa">
+      <img id="P8" src="./P11.jpeg" height="300" alt="robe">
+          <p>250 DH</p>
+          <label for="size42">Taille:</label>
+          <select id="size42">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Pantalon Classe', 250, document.getElementById('size42').value, document.getElementById('P8').src)">Ajouter au panier</button>
+      </div>
+      <div class="Pa">
+      <img id="P9" src="./P12.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size43">Taille:</label>
+          <select id="size43">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Pantalon Classe', 300, document.getElementById('size43').value, document.getElementById('P9').src)">Ajouter au panier</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="produits">
+    <div class="Pa">
+      <img id="P10" src="./P13.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size44">Taille:</label>
+          <select id="size44">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Pantalon Classe ', 300, document.getElementById('size44').value, document.getElementById('P10').src)">Ajouter au panier</button>
+      </div>
+      <div class="Pa">
+      <img id="P11" src="./P14.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size45">Taille:</label>
+          <select id="size45">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Pantalon Classe', 300, document.getElementById('size45').value, document.getElementById('P11').src)">Ajouter au panier</button>
+      </div>
+      <div class="Pa">
+      <img id="P12" src="./P16.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size46">Taille:</label>
+          <select id="size46">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Pantalon Classe', 300, document.getElementById('size46').value, document.getElementById('P12').src)">Ajouter au panier</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="Che">
+  <h2>Chemises</h2>
+  <div class="produits">
+    <div class="che">
+      <img id="c1" src="./1.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size147">Taille:</label>
+          <select id="size147">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Chemise', 300, document.getElementById('size147').value, document.getElementById('c1').src)">Ajouter au panier</button>
+    </div>
+    <div class="che">
+      <img id="c2" src="./2.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size148">Taille:</label>
+          <select id="size148">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Chemise', 300, document.getElementById('size148').value, document.getElementById('c2').src)">Ajouter au panier</button>
+      </div>
+      <div class="che">
+      <img id="c3" src="./3.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size149">Taille:</label>
+          <select id="size149">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Chemise', 300, document.getElementById('size149').value, document.getElementById('c3').src)">Ajouter au panier</button>
+      </div>
+  </div>
+  <br>
+  <br>
+  <div class="produits">
+    <div class="che">
+      <img id="c4" src="./4.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size150">Taille:</label>
+          <select id="size150">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Chemise', 300, document.getElementById('size150').value, document.getElementById('c4').src)">Ajouter au panier</button>
+    </div>
+    <div class="che">
+      <img id="c5" src="./5.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size51">Taille:</label>
+          <select id="size51">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Chemise', 300, document.getElementById('size51').value, document.getElementById('c5').src)">Ajouter au panier</button>
+      </div>
+      <div class="che">
+      <img id="c6" src="./6.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size152">Taille:</label>
+          <select id="size152">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Chemise', 300, document.getElementById('size152').value, document.getElementById('c6').src)">Ajouter au panier</button>
+      </div>
+  </div>
+  <br>
+  <br>
+  <div class="produits">
+    <div class="che">
+      <img id="c7" src="./7.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size153">Taille:</label>
+          <select id="size153">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Chemise', 300, document.getElementById('size153').value, document.getElementById('c7').src)">Ajouter au panier</button>
+    </div>
+    <div class="che">
+      <img id="c8" src="./8.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size154">Taille:</label>
+          <select id="size154">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Chemise', 300, document.getElementById('size154').value, document.getElementById('c8').src)">Ajouter au panier</button>
+      </div>
+      <div class="che">
+      <img id="c9" src="./9.jpeg" height="300" alt="robe">
+          <p>300 DH</p>
+          <label for="size155">Taille:</label>
+          <select id="size155">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Chemise', 300, document.getElementById('size155').value, document.getElementById('c9').src)">Ajouter au panier</button>
+      </div>
+  </div>
+</section>
+<section id="ens">
+  <h2>Les Ensembles </h2>
+  <div class="produits">
+    <div class="ensemble">
+      <img id="en1" src="./E1.jpeg" height="300" alt="robe">
+          <p>1700 DH</p>
+          <label for="size56">Taille:</label>
+          <select id="size56">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble Chic', 1700, document.getElementById('size56').value, document.getElementById('en1').src)">Ajouter au panier</button>
+    </div>
+    <div class="ensemble">
+      <img id="en2" src="./E2.jpeg" height="300" alt="robe">
+          <p>1500 DH</p>
+          <label for="size66">Taille:</label>
+          <select id="size66">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble Chic ', 1500, document.getElementById('size66').value, document.getElementById('en2').src)">Ajouter au panier</button>
+    </div>
+    <div class="ensemble">
+      <img id="en3" src="./E3.jpeg" height="300" alt="robe">
+          <p>2000 DH</p>
+          <label for="size77">Taille:</label>
+          <select id="size77">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble Chic ', 2000, document.getElementById('size77').value, document.getElementById('en3').src)">Ajouter au panier</button>
+      </div>
+  </div>
+  <br>
+  <br>
+  <div class="produits">
+    <div class="ensemble">
+      <img id="en4" src="./E4.jpeg" height="300" alt="robe">
+          <p>900 DH</p>
+          <label for="size88">Taille:</label>
+          <select id="size88">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble Simple', 900, document.getElementById('size88').value, document.getElementById('en4').src)">Ajouter au panier</button>
+    </div>
+    <div class="ensemble">
+      <img id="en5" src="./E5.jpeg" height="300" alt="robe">
+          <p>900 DH</p>
+          <label for="size222">Taille:</label>
+          <select id="size222">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble Simple ', 900, document.getElementById('size222').value, document.getElementById('en5').src)">Ajouter au panier</button>
+    </div>
+    <div class="ensemble">
+      <img id="en6" src="./E6.jpeg" height="300" alt="robe">
+          <p>800 DH</p>
+          <label for="size99">Taille:</label>
+          <select id="size99">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble Simple ', 800, document.getElementById('size99').value, document.getElementById('en6').src)">Ajouter au panier</button>
+      </div>
+  </div>
+  <br>
+  <br>
+  <div class="produits">
+    <div class="ensemble">
+      <img id="en7" src="./E7.jpeg" height="300" alt="robe">
+          <p>900 DH</p>
+          <label for="size200">Taille:</label>
+          <select id="size200">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble (pantalon + chemise)', 900, document.getElementById('size200').value, document.getElementById('en7').src)">Ajouter au panier</button>
+    </div>
+    <div class="ensemble">
+      <img id="en8" src="./E8.jpeg" height="300" alt="robe">
+          <p>700 DH</p>
+          <label for="size223">Taille:</label>
+          <select id="size223">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble (pantalon + chemise) ', 700, document.getElementById('size223').value, document.getElementById('en8').src)">Ajouter au panier</button>
+    </div>
+    <div class="ensemble">
+      <img id="en9" src="./E9.jpeg" height="300" alt="robe">
+          <p>800 DH</p>
+          <label for="size224">Taille:</label>
+          <select id="size224">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble (pantalon + chemise) ', 800, document.getElementById('size224').value, document.getElementById('en9').src)">Ajouter au panier</button>
+      </div>
+  </div>
+  <br>
+  <br>
+   <div class="produits">
+    <div class="ensemble">
+      <img id="en10" src="./E10.jpeg" height="300" alt="robe">
+          <p>1900 DH</p>
+          <label for="size2222">Taille:</label>
+          <select id="size2222">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble tailleur 3 pièces', 1900, document.getElementById('size2222').value, document.getElementById('en10').src)">Ajouter au panier</button>
+    </div>
+    <div class="ensemble">
+      <img id="en11" src="./E11.jpeg" height="300" alt="robe">
+          <p>2000 DH</p>
+          <label for="size100">Taille:</label>
+          <select id="size100">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select> 
+          <button onclick="addToCart('Ensemble tailleur 3 pièces', 700, document.getElementById('size100').value, document.getElementById('en11').src)">Ajouter au panier</button>
+    </div>
+    <div class="ensemble">
+      <img id="en12" src="./E12.jpeg" height="300" alt="robe">
+          <p>1800 DH</p>
+          <label for="size102">Taille:</label>
+          <select id="size102">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+          </select>
+          <button onclick="addToCart('Ensemble tailleur 3 pièces ', 800, document.getElementById('size102').value, document.getElementById('en12').src)">Ajouter au panier</button>
+      </div>
+  </div>
+  
+</section>
+
+<script>
+function scrollToSection(sectionId) {
+  const element = document.querySelector(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+function addToCart(name, price, size, img) {
+
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+  let item = cart.find(p => p.name === name && p.size === size && p.img === img);
+
+  if (item) {
+    item.qty += 1; 
+  } else {
+    cart.push({ name: name, price: price, size: size, img: img, qty: 1 });
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Il est ajouter au panier");
+}
+</script>
+
+
+
+
+    </body>
+
+

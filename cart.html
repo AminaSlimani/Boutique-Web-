@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <!-- khass ndir logo  -->
+
+<h2>🛒Panier</h2>
+
+<ul id="cartList"></ul>
+
+<h3 id="total"></h3>
+
+<button onclick="sendWhatsApp()">Envoi sur WhatsApp</button>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let list = document.getElementById("cartList");
+let totalText = document.getElementById("total");
+
+function displayCart() {
+  list.innerHTML = "";
+  let total = 0;
+
+  cart.forEach((item, index) => {
+    let li = document.createElement("li");
+
+    let itemTotal = item.price * item.qty;
+    total += itemTotal;
+
+    li.innerHTML = `
+      <img src="${item.img}" alt="${item.name}" style="width:50px; height:50px;">
+      ${item.name} (Taille: ${item.size}) - ${item.price} DH × ${item.qty}
+      = ${itemTotal} DH
+      <button onclick="changeQty(${index}, 1)">+</button>
+      <button onclick="changeQty(${index}, -1)">-</button>
+      <button onclick="removeItem(${index})">✖️</button>
+    `;
+
+    list.appendChild(li);
+  });
+
+  totalText.textContent = "Total: " + total + " DH";
+}
+
+function changeQty(index, value) {
+  cart[index].qty += value;
+
+  if (cart[index].qty <= 0) {
+    cart.splice(index, 1);
+  }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  displayCart();
+}
+
+function removeItem(index) {
+  cart.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  displayCart();
+}
+
+function sendWhatsApp() {
+  if (cart.length === 0) {
+    alert("la carte est vide");
+    return;
+  }
+
+  let total = 0;
+  let message = '' ; 
+
+  cart.forEach(item => {
+    let itemTotal = item.price * item.qty;
+    total += itemTotal;
+    message += `- ${item.name} (Taille: ${item.size}) (${item.qty}) = ${itemTotal} DH\n`;
+  });
+
+  message += `\nTotal: ${total} DH`;
+
+  let phoneNumber = "212600000000"; 
+  let url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}
+
+displayCart();
+</script>
+
+</body>
+</html>
